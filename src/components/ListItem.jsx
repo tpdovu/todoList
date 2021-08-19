@@ -17,7 +17,8 @@ function ListItem(props) {
       >
         {props.item}
         <button
-          onClick={() => {
+          onClick={(event) => {
+            event.stopPropagation();
             props.delete(props.id);
           }}
           style={{ float: "right" }}
