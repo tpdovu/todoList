@@ -24,13 +24,6 @@ function App() {
       <div className="heading">
         <h1>To-Do List</h1>
       </div>
-      {/* <div className="form">
-        <input onChange={handleChange} type="text" value={inputText} />
-        <button onClick={addItem}>
-          <span>Add</span>
-        </button>
-      </div> */}
-
       <InputText onAdd={addItem} />
       <div>
         <ul>
